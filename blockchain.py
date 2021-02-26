@@ -60,7 +60,7 @@ class BlockChain(object):
             'receiver': receiver,
             'amount': amount
         })
-        return True
+        return self.last_block['index'] + 1
 
     def register_node(self, address):
         """
